@@ -199,6 +199,7 @@ p_SPD <- data |>
     x = Jahr, 
     y = SPD, 
     color = Partei)) + 
+    geom_hline(aes(yintercept = 5), alpha = 0.3, linetype = "dotted") +
   geom_line(size = 0.7) + 
   geom_line(aes(y = nicht_SPD), 
             alpha = 0.1) +
@@ -347,6 +348,7 @@ p_Grüne <- data |>
     x = Jahr, 
     y = Grüne, 
     color = Partei)) + 
+    geom_hline(aes(yintercept = 5), alpha = 0.3, linetype = "dotted") +
   geom_line(size = 0.7) + 
   geom_line(aes(y = nicht_Grüne), 
             alpha = 0.1) +
@@ -430,6 +432,7 @@ p_Linke <- data |>
     x = Jahr, 
     y = Linke, 
     color = Partei)) + 
+    geom_hline(aes(yintercept = 5), alpha = 0.3, linetype = "dotted") +
   geom_line(size = 0.7) + 
   geom_line(aes(y = nicht_Linke), 
             alpha = 0.1) +
@@ -513,6 +516,7 @@ p_AFD <- data |>
     x = Jahr, 
     y = AFD, 
     color = Partei)) + 
+    geom_hline(aes(yintercept = 5), alpha = 0.3, linetype = "dotted") +
   geom_line(size = 0.7) + 
   geom_line(aes(y = nicht_AFD), 
             alpha = 0.1) +
